@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/joaopedrobuzattim/salespanel-ioasys#readme",
   "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/pg": "^7.14.11",
     "nodemon": "^2.0.7",
     "ts-loader": "^8.1.0",
     "ts-node-dev": "^1.1.6",
@@ -27,5 +29,9 @@
     "webpack": "^5.29.0",
     "webpack-cli": "^4.6.0",
     "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
   }
 }
