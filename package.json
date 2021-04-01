@@ -4,7 +4,9 @@
   "description": "Projeto desafio de modelagem de dados para o Camp Ioasys 2021 - Trilha Backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/joaopedrobuzattim/salespanel-ioasys/issues"
   },
-  "homepage": "https://github.com/joaopedrobuzattim/salespanel-ioasys#readme"
+  "homepage": "https://github.com/joaopedrobuzattim/salespanel-ioasys#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "ts-loader": "^8.1.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3",
+    "webpack": "^5.29.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-node-externals": "^2.5.2"
+  }
 }
