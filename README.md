@@ -82,7 +82,7 @@ create table costumers (
     address VARCHAR(100) NOT NULL,
     cpf BIGINT UNIQUE NOT NULL,
     createdAt DATE NOT NULL DEFAULT CURRENT_DATE
-) 
+); 
 
 # Volte para a aba do terminal anterior e rode a aplicação
 $ nodemon
