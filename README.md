@@ -4,7 +4,7 @@
   <a href="www.linkedin.com/in/joão-pedro-buzatti-mendes-b032301ba">
     <img alt="Linkedin" src="https://img.shields.io/badge/-João%20Pedro%20Buzatti%20Mendes-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
   </a>
-  <a href="https://github.com/joaopedrobuzattim/-----------/------/master/LICENSE.txt">
+  <a href="https://github.com/joaopedrobuzattim/costumers-camp-2021/blob/main/LICENSE.txt">
     <img alt="GitHub license" src="https://img.shields.io/github/license/joaopedrobuzattim/costumers-camp-2021?logo=mint&style=flat-square">
   </a>
 </h1>
@@ -16,8 +16,6 @@
   <a href="#man-Autor">Autor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-Licença">Licença</a>
 </p>
-
-<img src="./.github/images/screens-moveit-2.0.svg" />
 
 ## :page_facing_up: Descrição
 API para gerenciar um painel de clientes. Feita para aplicar os conceitos de SQL no Postgres, passados na aula de banco de dados do Camp Ioasys 2021.    
