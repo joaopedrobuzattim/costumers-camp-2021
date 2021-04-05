@@ -1,7 +1,7 @@
 <h1 align="center">
   <strong style="color: #5965E0; font-size: 50px;"> Costumers Panel Api </strong>
   <br />
-  <a href="www.linkedin.com/in/joão-pedro-buzatti-mendes-b032301ba">
+  <a href="https://www.linkedin.com/in/joão-pedro-buzatti-mendes-b032301ba">
     <img alt="Linkedin" src="https://img.shields.io/badge/-João%20Pedro%20Buzatti%20Mendes-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
   </a>
  <a href="https://github.com/joaopedrobuzattim/costumers-camp-2021/blob/main/LICENSE.txt">
@@ -100,7 +100,7 @@ $ nodemon
 
 Entre em contato!
 
-<a href="www.linkedin.com/in/joão-pedro-buzatti-mendes-b032301ba">
+<a href="https://www.linkedin.com/in/joão-pedro-buzatti-mendes-b032301ba">
     <img alt="Linkedin" src="https://img.shields.io/badge/-João%20Pedro%20Buzatti%20Mendes-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
   </a>
 
