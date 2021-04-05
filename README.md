@@ -4,7 +4,7 @@
   <a href="www.linkedin.com/in/joão-pedro-buzatti-mendes-b032301ba">
     <img alt="Linkedin" src="https://img.shields.io/badge/-João%20Pedro%20Buzatti%20Mendes-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
   </a>
-  <a href="https://github.com/joaopedrobuzattim/costumers-camp-2021/blob/main/LICENSE.txt">
+ <a href="https://github.com/joaopedrobuzattim/costumers-camp-2021/blob/main/LICENSE.txt">
     <img alt="GitHub license" src="https://img.shields.io/github/license/joaopedrobuzattim/costumers-camp-2021?logo=mint&style=flat-square">
   </a>
 </h1>
