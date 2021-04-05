@@ -1,4 +1,4 @@
-import express , { Request, Response } from 'express';
+import express from 'express';
 import { costumerController } from '../../Controller/costumerController';
 
 const controller = new costumerController();

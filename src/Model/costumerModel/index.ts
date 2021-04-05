@@ -12,14 +12,6 @@ interface body {
 
 type tupdateBody = { [key: string] : string }
 
-interface updateBody {
-    first_name?: string,
-    last_name?: string,
-    email?: string,
-    address?: string,
-    cpf?: string
-}
-
 interface modelInterface {
 
     getAll: () =>  Promise<QueryResult>;
@@ -39,6 +31,7 @@ export class costumerModel implements modelInterface  {
     }
 
      getOne( id: string ){
+
         const costumer = database.query('SELECT * FROM costumers WHERE id = $1', [id]);
         return costumer;
     }
@@ -73,8 +66,4 @@ export class costumerModel implements modelInterface  {
         const costumers = database.query('DELETE FROM costumers WHERE id = $1', [ id ]);
         return costumers;
     }
-
-
-
-
 }
