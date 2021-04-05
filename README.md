@@ -71,7 +71,7 @@ create database costumerspanel;
 # Faça a conexão com a database criada
 \c costumerspanel;
 
-# Instale o uui e crie a tabela
+# Instale o uuid e crie a tabela
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 create table costumers (
