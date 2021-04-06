@@ -1,23 +1,31 @@
 import { pool as database } from '../../database';
 import { QueryResult } from 'pg';
 
-interface body {
-    first_name: string,
-    last_name: string,
-    email?: string,
-    address: string,
-    cpf: string
+interface TypeBody {
+    first_name: string;
+    last_name: string;
+    email?: string;
+    address: string;
+    cpf: string;
 }
 
 
-type tupdateBody = { [key: string] : string }
+interface TypeUpdateBody { 
+    first_name?: string;
+    last_name?: string;
+    email?: string;
+    address?: string;
+    cpf?: string;
+}
+
+type KeysOfTypeUpdateBody = keyof TypeUpdateBody;
 
 interface modelInterface {
 
     getAll: () =>  Promise<QueryResult>;
     getOne: ( id: string ) =>  Promise<QueryResult>;
-    createOne: (body: body ) => Promise<QueryResult>;
-    updateOne: (id: string, body: tupdateBody) => Promise<QueryResult>[];
+    createOne: (body: TypeBody ) => Promise<QueryResult>;
+    updateOne: (id: string, body: TypeUpdateBody) => Promise<QueryResult>[];
     deleteOne: ( id: string ) =>  Promise<QueryResult>;
 }
 
@@ -36,7 +44,7 @@ export class costumerModel implements modelInterface  {
         return costumer;
     }
     
-    createOne( body: body ){
+    createOne( body: TypeBody ){
         const { first_name, last_name, email, address, cpf  } = body;
 
         const costumer = database.query('INSERT INTO costumers (first_name, last_name, email, address, cpf) VALUES ($1, $2, $3, $4, $5)',[
@@ -51,12 +59,13 @@ export class costumerModel implements modelInterface  {
 
     }
     
-    updateOne(id: string, body: tupdateBody){
+    updateOne(id: string, body: TypeUpdateBody){
 
         const queryArray = [];
 
         for(let key in body){
-            queryArray.push(database.query(`UPDATE costumers SET ${key} = $1 WHERE id = $2`, [ body[key], id ]));
+            let typedKey = key as KeysOfTypeUpdateBody;
+            queryArray.push(database.query(`UPDATE costumers SET ${key} = $1 WHERE id = $2`, [ body[typedKey], id ]));
         }
 
         return queryArray;
